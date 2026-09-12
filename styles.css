@@ -1,0 +1,275 @@
+.body{
+    margin: 0;
+    font-family: 'ubuntu',sans-serif;
+    background-color: #f8fafc;
+    color: #f9f5f5;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #2c3e50;
+    color: #fff;
+    flex-wrap: wrap;
+}
+/*.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0e33c7;
+    border-radius: 9cqmin;
+    color:#fff;
+    border:6px outset rgb(237, 86, 126);
+    box-shadow: 4px 5px 9px rgb(16, 1, 1);
+}
+.logo:hover{
+    background-color:#0b0a0b;
+}
+*/
+.heading{
+    height: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+
+}
+#icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    width: 200px;
+
+}
+.nav{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btn{
+    padding: 0.75rem 1.5rem;
+    background: #354b62;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+    border: 2.5px inset rgb(16, 1, 1);
+    box-shadow: 2px 4px 5px rgb(217, 22, 22) ;
+}
+.nav-btn:hover{
+    background: #d7d0ed;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid rgb(4, 13, 4);
+    box-shadow:3px 4px 4px #2633f0;
+}
+.search-bar{
+    width: 300px;
+    height: 25px;
+    border-radius: 7px;
+    place-content: text;
+    margin-left: 200px;
+    margin-top: 20px;
+
+
+}
+#newreleased{
+    text-decoration:underline red 5px;
+    font-weight: bold;
+
+
+}
+
+.lightmode {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    justify-content: flex-end;
+    margin-left: 50px;
+    cursor: pointer;
+    position: relative;
+
+
+}
+.song-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(4,1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 20px;
+    background-color:#fff;
+    background-size: cover;
+}
+
+@media screen and (min-width:600px){
+    .song-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+    
+.song-card{
+    background: #f5f0f0;
+    border-radius: 20px;
+    box-shadow: 5px 4px 6px rgba(19, 14, 14, 0.1);
+    padding: 1rem;
+    text-align: center;
+    position:relative;
+    border:1.5px groove rgb(4, 2, 2);
+
+}
+.song-card:hover{
+    background-color: #fda3fd;
+        color:#000;
+        border: 6px groove rgb(4, 13, 4);
+        box-shadow:3px 4px 4px #2633f0;
+
+}
+.Play{
+    height: 40px;
+    width: 90px;
+    background-color: #05103b;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-top: 55px;
+    box-shadow: 2px 4px 5px red;
+    border: 4px outset #b5b1b1;
+}
+.Play:hover{
+    height: 45px;
+    width: 95px;
+    background-color: #000;
+    box-shadow: 2px 4px 5px rgb(21, 212, 78);
+    font-weight: bold;
+
+}
+.poster{
+    position:relative;
+
+}
+.poster img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position:relative;
+
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+.song-title{
+    margin-top: 0.5rem;
+    color: #0e0808;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    
+}
+.artist-info{
+    text-align: center;
+    font-weight: bold;
+    text-decoration:underline;
+    color: #f90b0b;
+    font-size: 15px;
+}
+/* comment */
+.content{
+    position:relative;
+    width: 250px;
+    height:250px;
+    position: absolute;
+    top: 30%;
+    background-image:url('media/image7.webp');
+    background-size: cover;
+
+}
+.poster-col{
+    margin-left: 6%;
+    padding-left:10%;
+    padding-right:10%;
+
+}
+.poster-col h1{
+    font-size: 20px;
+    color: #fff;
+    padding-bottom:200px;
+    float: left;
+}
+.playbutton-col{
+    float: right;
+    padding-top: 50px;
+    padding-right:10px;
+    margin-right:10px;
+    margin-left:10px;
+    display:flex;
+    align-items:center;
+}
+.playbutton-col P{
+    font-size: 50px;
+    color: #5f5f5f;
+    font-weight: 500;
+    padding-left: 1px;
+}
+#icon1{
+    width:50px;
+    cursor:pointer;
+    height: 50px;
+    border-radius: 50%;
+    transform: matrix(#ffff);
+}
+
+#icon2{
+    width:50px;
+    cursor:pointer;
+    height: 50px;
+    border-radius: 50%;
+    transform: matrix(#ffff);
+}
+#icon3{
+    width:50px;
+    cursor:pointer;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#icon4{
+    width:50px;
+    cursor:pointer;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#icon5{
+    width:50px;
+    cursor:pointer;
+    height: 50px;
+    border-radius: 50%;
+}
+.footer{
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    background: #0f0f0f;
+    color: #f5f0f0;
+}

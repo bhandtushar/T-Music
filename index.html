@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-MUSIC</title>
+    <link rel="stylesheet" href="styles.css"/>
+    
+</head>
+<body>
+    <header>
+    <div class="heading">
+        <img src="media/image1.jpg" id="icon">
+        <h1 class="logo" >T-Music</h1>
+    </div>
+    <nav>
+        <button class="nav-btn">Hindi</button>
+        <button class="nav-btn">Marathi</button>
+        <button class="nav-btn">English</button>
+        <button class="nav-btn">Artist</button>
+        <button class="nav-btn" id="login">Login</button>
+        <input type="text" palceholder="Search song" id="input">
+            <img src="media/image8.png" class="lightmode" alt="lightmode">
+        
+    </nav>
+    </div>
+    </header>
+    </footer>
+    <h1 id="newreleased">New Released </h1>
+    <main class="song-grid">
+        <!--song1-->
+        <div class="song-card">
+            <div class="poster">
+                <img src="media/image7.webp" alt="song poster">
+                <div class="play-btn">
+                    <img src="media/image3.jpg" id="icon1">
+                    <div class="Play">Play</div>
+                </div>
+            </div>
+            <p class="song-title">Tere Liye</p>
+            <p class="artist-info">Lyricist:Tushar Bhand</p>
+            <!--add song-->
+            
+            <audio id="mysong1">
+                <source src="media/song.mp3" type="audio/mp3">
+               </audio>
+        </div>
+      
+        <!--song2-->
+        <div class="song-card">
+            <div class="poster">
+                <img src="media/images5.jpeg" alt="song poster">
+                <div class="play-btn">
+                    <img src="media/image3.jpg" id="icon2">
+                    <div class="Play">Play</div>
+                </div>
+            </div>
+            <p class="song title">Song Name</p>
+            <!--add song-->
+            <audio id="mysong2">
+                <source src="media/song.mp3" type="audio/mp3">
+               </audio>
+               <script>
+                   var mysong2 = document.getElementById("mysong2");
+                   var icon2= document.getElementById("icon2");
+               
+                   icon2.onclick = function() {
+                       if (mysong2.paused) {
+                           mysong2.play();
+                           icon2.src = "media/image3.jpg";
+                       } else {
+                           mysong2.pause();  // corrected line
+                           icon2.src = "media/image9.jpg";
+                       }
+                   }
+               </script>
+        </div>
+      
+        <!--Song3--> 
+        <div class="song-card">
+            <div class="poster">
+                <img src="media/image6.jpg" alt="song poster">
+                <div class="play-btn">
+                    <img src="media/image3.jpg" id="icon3">
+                    <div class="Play">Play</div>
+                </div>
+            </div>
+            <p class="song title">Song Name</p>
+            <!--add song-->
+            <audio id="mysong3">
+                <source src="media/song.mp3" type="audio/mp3">
+               </audio>
+               <script>
+                   var mysong3 = document.getElementById("mysong3");
+                   var icon3= document.getElementById("icon3");
+               
+                   icon3.onclick = function() {
+                       if (mysong3.paused) {
+                           mysong3.play();
+                           icon3.src = "media/image3.jpg";
+                       } else {
+                           mysong3.pause();  // corrected line
+                           icon3.src = "media/image9.jpg";
+                       }
+                   }
+               </script>
+        </div>
+      
+        <!--song4-->  
+        <div class="song-card">
+            <div class="poster">
+                <img src="media/image6.jpg" alt="song poster">
+                <div class="play-btn">
+                    <img src="media/image3.jpg" id="icon4">
+                    <div class="Play">Play</div>
+                </div>
+            </div>
+            <p class="song title">Song Name</p>
+            <!--add song-->
+            <audio id="mysong4">
+                <source src="media/song.mp3" type="audio/mp3">
+               </audio>
+               <script>
+                   var mysong4 = document.getElementById("mysong4");
+                   var icon4= document.getElementById("icon4");
+               
+                   icon4.onclick = function() {
+                       if (mysong4.paused) {
+                           mysong4.play();
+                           icon4.src = "media/image3.jpg";
+                       } else {
+                           mysong4.pause();  // corrected line
+                           icon4.src = "media/image9.jpg";
+                       }
+                   }
+               </script>
+        </div>
+        <!--Song 5-->
+        <div class="song-card">
+            <div class="poster">
+                <img src="media/image6.jpg" alt="song poster">
+                <div class="play-btn">
+                    <img src="media/image3.jpg" id="icon5">
+                    <div class="Play">Play</div>
+                </div>
+            </div>
+            <p class="song title">Song Name</p>
+            <!--add song-->
+            <audio id="mysong5">
+                <source src="media/song.mp3" type="audio/mp3">
+               </audio>
+               <script>
+                   var mysong5 = document.getElementById("mysong5");
+                   var icon5= document.getElementById("icon5");
+               
+                   icon5.onclick = function() {
+                       if (mysong5.paused) {
+                           mysong5.play();
+                           icon5.src = "media/image3.jpg";
+                       } else {
+                           mysong5.pause();  // corrected line
+                           icon5.src = "media/image9.jpg";
+                       }
+                   }
+               </script>
+        </div>
+            
+    </main> 
+    <footer class="footer">
+        <nav>
+            <p class="footer">Help</p>
+            <p class="footer">contact</p>
+            <p class="footer">Blog</p>
+            <p class="footer">Information</p>
+        </nav>
+
+
+    </footer> 
+    <script  src="script.js"></script>
+</body>
+</html>
